@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ARTICLE TITLE — Réveloquences SaraQ™</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Cinzel:wght@400;600;900&family=DM+Mono:ital,wght@0,300;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../style.css"/>
+  <style>
+    .article-hero {
+      min-height: 55vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 8rem 3rem 4rem;
+      position: relative;
+      border-bottom: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .article-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 30%, rgba(201,168,76,0.05) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .article-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.4em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.1s forwards;
+    }
+    .article-title {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(2rem, 5vw, 4rem);
+      font-weight: 400;
+      color: var(--cream);
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      max-width: 750px;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.2s forwards;
+    }
+    .article-subtitle {
+      font-size: 1.15rem;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--muted);
+      max-width: 600px;
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.3s forwards;
+    }
+    .article-meta {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.3em;
+      color: var(--muted);
+      text-transform: uppercase;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.4s forwards;
+    }
+    .article-body {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 5rem 3rem;
+    }
+    .article-body p {
+      margin-bottom: 1.8rem;
+      font-size: 1.05rem;
+      font-weight: 300;
+      line-height: 1.9;
+    }
+    .article-body h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--cream);
+      margin: 3rem 0 1.5rem;
+    }
+    /* Citation mise en valeur */
+    .pullquote {
+      border-left: 2px solid var(--gold);
+      padding: 1.5rem 2rem;
+      margin: 3rem 0;
+      font-size: 1.2rem;
+      font-style: italic;
+      font-weight: 300;
+      color: var(--cream);
+      line-height: 1.6;
+    }
+    .highlight { color: var(--gold); font-style: italic; }
+    .article-nav {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2rem 3rem 5rem;
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid var(--border);
+    }
+    .article-nav a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      color: var(--gold);
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .article-nav a:hover { color: var(--cream); }
+
+    @media (max-width: 700px) {
+      .article-hero { padding: 7rem 1.5rem 3rem; }
+      .article-body { padding: 3rem 1.5rem; }
+      .article-nav { padding: 2rem 1.5rem 4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="logo" href="../index.html">Réveloquences SaraQ™</a>
+    <nav>
+      <a href="../index.html#writings">Writings</a>
+      <a href="../index.html#manifesto">Manifesto</a>
+    </nav>
+  </header>
+
+  <!-- 🔧 CHANGE: tag, title, subtitle, date -->
+  <section class="article-hero">
+    <p class="article-tag">Category · Vol. X</p>
+    <h1 class="article-title"><strong>Welcome to my head. It's not doing well, because it sees very clearly.</strong></h1>
+    <p class="article-meta">2025 · SaraQ</p>
+  </section>
+
+  <!-- 🔧 CHANGE: write your article here -->
+  <article class="article-body">
+
+    <p>We've been having sand thrown in our eyes since birth:
+        "Life is precious." 
+        "Mental health is important." 
+        "The people hold the power."</p>
+
+    <!-- EXEMPLE DE CITATION MISE EN VALEUR -->
+    <div class="pullquote">
+        "That's how it works, you have to deal with it."
+    </div>
+
+    <h2>Section Title</h2>
+
+    <p>Empty slogans that are repeated to us endlessly in newspapers, political campaigns, and Instagram posts. 
+       Meanwhile, we're more tired than ever, more alone than ever, more manipulated than ever.</p>
+
+    <p>They talk about listening, but no one really listens (even when they're paid to...). 
+       They talk about inclusivity, but only if you fit into the right boxes. 
+       They talk about democracy... but we're made to choose the "least bad" from a ridiculous list of candidates we didn't choose ourselves.</p>
+
+    <p>I don't write to please. 
+       I'm starting this blog because I'm tired of staying silent. 
+       I no longer want to be afraid to say I'm not okay. 
+       I don't want to pretend to be strong, kind, functional, and grateful when all around me I see arrogant, empathy-lacking individuals being rewarded.</p>
+
+    <p>I am a woman, a mother, a lucid person in a world that's upside down. A world that prioritizes and values money, power, beauty instead of altruism, empathy, and know-how. 
+       And sometimes, I don't want to be a part of it anymore (and I'm not even kidding).</p>
+
+    <p>I continue because I have children. Because I have projects. Because sometimes I laugh. 
+       But don't talk to me about "luck" or "positivity." 
+       Because if you don't know me, if you're reading this for the first time, know that you're entering a no-bullshit zone. 
+       Here, we speak the truth. Even if it's uncomfortable.</p>
+
+    <p>I don't know where I'm going. But I know I won't go back to where I silenced myself.</p>
+
+  </article>
+
+  <!-- 🔧 CHANGE: liens vers article précédent/suivant -->
+  <div class="article-nav">
+    <a href="quantum-introduction.html">← Previous</a>
+    <a href="saron-hypothesis.html">Next →</a>
+  </div>
+
+  <footer>
+    <span class="footer-logo">Réveloquences SaraQ™</span>
+    <span class="footer-copy">© 2025 · All rights reserved · Powered by thought & BrunoQ</span>
+  </footer>
+
+</body>
+</html>
