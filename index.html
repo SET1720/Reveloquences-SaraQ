@@ -1,91 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Réveloquences SaraQ™</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Cinzel:wght@400;600;900&family=DM+Mono:ital,wght@0,300;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
   <style>
-    :root {
-      --black: #080808;
-      --deep: #0d0d0f;
-      --surface: #111114;
-      --border: #222228;
-      --gold: #c9a84c;
-      --gold-dim: #8a6d2f;
-      --gold-glow: rgba(201,168,76,0.15);
-      --cream: #e8e0d0;
-      --muted: #6b6660;
-      --text: #cfc8bc;
-    }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      background: var(--black);
-      color: var(--text);
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 18px;
-      line-height: 1.7;
-      overflow-x: hidden;
-      cursor: default;
-    }
-
-    /* ── NOISE OVERLAY ── */
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-      pointer-events: none;
-      z-index: 1000;
-      opacity: 0.4;
-    }
-
-    /* ── HEADER ── */
-    header {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
-      padding: 1.5rem 3rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 1px solid var(--border);
-      background: rgba(8,8,8,0.85);
-      backdrop-filter: blur(12px);
-    }
-
-    .logo {
-      font-family: 'Cinzel', serif;
-      font-size: 0.85rem;
-      font-weight: 600;
-      letter-spacing: 0.3em;
-      color: var(--gold);
-      text-transform: uppercase;
-      text-decoration: none;
-    }
-
-    nav {
-      display: flex;
-      gap: 2.5rem;
-      align-items: center;
-    }
-
-    nav a {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.7rem;
-      letter-spacing: 0.2em;
-      color: var(--muted);
-      text-decoration: none;
-      text-transform: uppercase;
-      transition: color 0.3s;
-    }
-
-    nav a:hover { color: var(--gold); }
-
     /* ── HERO ── */
     .hero {
       min-height: 100vh;
@@ -97,23 +18,18 @@
       position: relative;
       overflow: hidden;
     }
-
     .hero::before {
       content: '';
       position: absolute;
-      top: -20%;
-      right: -10%;
-      width: 600px;
-      height: 600px;
+      top: -20%; right: -10%;
+      width: 600px; height: 600px;
       background: radial-gradient(ellipse, rgba(201,168,76,0.06) 0%, transparent 65%);
       pointer-events: none;
     }
-
     .hero::after {
       content: 'RÉVELOQUENCES';
       position: absolute;
-      bottom: -2rem;
-      left: -1rem;
+      bottom: -2rem; left: -1rem;
       font-family: 'Cinzel', serif;
       font-size: clamp(5rem, 15vw, 14rem);
       font-weight: 900;
@@ -123,7 +39,6 @@
       pointer-events: none;
       line-height: 1;
     }
-
     .hero-eyebrow {
       font-family: 'DM Mono', monospace;
       font-size: 0.68rem;
@@ -134,7 +49,6 @@
       opacity: 0;
       animation: fadeUp 1s 0.2s forwards;
     }
-
     .hero-title {
       font-family: 'Cinzel', serif;
       font-size: clamp(2.8rem, 7vw, 6.5rem);
@@ -146,12 +60,7 @@
       animation: fadeUp 1s 0.4s forwards;
       max-width: 800px;
     }
-
-    .hero-title em {
-      font-style: italic;
-      color: var(--gold);
-    }
-
+    .hero-title em { font-style: italic; color: var(--gold); }
     .hero-sub {
       font-size: 1.2rem;
       font-weight: 300;
@@ -162,7 +71,6 @@
       opacity: 0;
       animation: fadeUp 1s 0.6s forwards;
     }
-
     .hero-about {
       max-width: 520px;
       font-size: 1rem;
@@ -174,61 +82,11 @@
       opacity: 0;
       animation: fadeUp 1s 0.8s forwards;
     }
+    .hero-about strong { color: var(--gold); font-weight: 600; }
 
-    .hero-about strong {
-      color: var(--gold);
-      font-weight: 600;
-    }
+    /* ── ARTICLES ── */
+    .section { padding: 5rem 3rem; }
 
-    /* ── DIVIDER ── */
-    .divider {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      padding: 0 3rem;
-      margin: 2rem 0;
-    }
-
-    .divider-line {
-      flex: 1;
-      height: 1px;
-      background: var(--border);
-    }
-
-    .divider-symbol {
-      font-family: 'Cinzel', serif;
-      font-size: 0.7rem;
-      letter-spacing: 0.3em;
-      color: var(--gold-dim);
-      text-transform: uppercase;
-    }
-
-    /* ── WRITINGS SECTION ── */
-    .section {
-      padding: 5rem 3rem;
-    }
-
-    .section-label {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.65rem;
-      letter-spacing: 0.4em;
-      color: var(--gold);
-      text-transform: uppercase;
-      margin-bottom: 3rem;
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .section-label::after {
-      content: '';
-      flex: 1;
-      max-width: 60px;
-      height: 1px;
-      background: var(--gold-dim);
-    }
-
-    /* ── ARTICLE CARDS ── */
     .articles {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
@@ -248,17 +106,14 @@
       display: block;
       color: inherit;
     }
-
     .article-card::before {
       content: '';
       position: absolute;
       top: 0; left: 0;
-      width: 2px;
-      height: 0;
+      width: 2px; height: 0;
       background: var(--gold);
       transition: height 0.5s cubic-bezier(0.16,1,0.3,1);
     }
-
     .article-card:hover { background: var(--surface); }
     .article-card:hover::before { height: 100%; }
 
@@ -270,7 +125,6 @@
       text-transform: uppercase;
       margin-bottom: 1rem;
     }
-
     .card-title {
       font-family: 'Cinzel', serif;
       font-size: 1.15rem;
@@ -279,7 +133,6 @@
       line-height: 1.3;
       margin-bottom: 1rem;
     }
-
     .card-excerpt {
       font-size: 0.9rem;
       font-weight: 300;
@@ -288,27 +141,22 @@
       line-height: 1.7;
       margin-bottom: 1.5rem;
     }
-
     .card-meta {
       font-family: 'DM Mono', monospace;
       font-size: 0.6rem;
       letter-spacing: 0.15em;
-      color: var(--border);
+      color: var(--muted);
       text-transform: uppercase;
     }
+    .card-soon { color: var(--border); }
 
-    /* ── FEATURED ARTICLE ── */
+    /* Featured */
     .article-featured {
       grid-column: 1 / -1;
       display: grid;
       grid-template-columns: 1fr 2fr;
-      gap: 0;
       background: var(--deep);
-      border-bottom: 1px solid var(--border);
-      padding: 0;
-      cursor: pointer;
     }
-
     .featured-accent {
       background: linear-gradient(180deg, var(--gold-glow) 0%, transparent 100%);
       border-right: 1px solid var(--border);
@@ -317,7 +165,6 @@
       justify-content: center;
       padding: 3rem;
     }
-
     .featured-accent-text {
       font-family: 'Cinzel', serif;
       font-size: 0.6rem;
@@ -325,20 +172,14 @@
       color: var(--gold-dim);
       text-transform: uppercase;
       writing-mode: vertical-rl;
-      text-orientation: mixed;
     }
+    .featured-content { padding: 3rem; }
 
-    .featured-content {
-      padding: 3rem;
-    }
-
-    /* ── MANIFESTO SECTION ── */
+    /* Manifesto */
     .manifesto {
       padding: 6rem 3rem;
-      position: relative;
       border-top: 1px solid var(--border);
     }
-
     .manifesto-quote {
       font-family: 'Cormorant Garamond', serif;
       font-size: clamp(1.8rem, 4vw, 3rem);
@@ -351,19 +192,16 @@
       text-align: center;
       position: relative;
     }
-
     .manifesto-quote::before {
       content: '"';
       font-size: 8rem;
       color: var(--gold-dim);
       opacity: 0.3;
       position: absolute;
-      top: -3rem;
-      left: -2rem;
+      top: -3rem; left: -2rem;
       font-family: 'Cormorant Garamond', serif;
       line-height: 1;
     }
-
     .manifesto-author {
       text-align: center;
       margin-top: 2rem;
@@ -374,132 +212,87 @@
       text-transform: uppercase;
     }
 
-    /* ── FOOTER ── */
-    footer {
-      padding: 3rem;
-      border-top: 1px solid var(--border);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .footer-logo {
-      font-family: 'Cinzel', serif;
-      font-size: 0.75rem;
-      letter-spacing: 0.3em;
-      color: var(--gold-dim);
-    }
-
-    .footer-copy {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.6rem;
-      letter-spacing: 0.2em;
-      color: var(--muted);
-    }
-
-    /* ── ANIMATIONS ── */
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(24px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-
-    /* ── SCROLLBAR ── */
-    ::-webkit-scrollbar { width: 4px; }
-    ::-webkit-scrollbar-track { background: var(--black); }
-    ::-webkit-scrollbar-thumb { background: var(--gold-dim); }
-
-    /* ── MOBILE ── */
     @media (max-width: 700px) {
-      header { padding: 1.2rem 1.5rem; }
-      nav { gap: 1.5rem; }
       .hero { padding: 7rem 1.5rem 4rem; }
       .section { padding: 3rem 1.5rem; }
-      .divider { padding: 0 1.5rem; }
+      .articles { grid-template-columns: 1fr; }
       .article-featured { grid-template-columns: 1fr; }
       .featured-accent { display: none; }
-      footer { flex-direction: column; gap: 1rem; text-align: center; }
-      .articles { grid-template-columns: 1fr; }
+      .manifesto { padding: 4rem 1.5rem; }
     }
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
   <header>
-    <a class="logo" href="#">Réveloquences SaraQ™</a>
+    <a class="logo" href="index.html">Réveloquences SaraQ™</a>
     <nav>
       <a href="#writings">Writings</a>
       <a href="#manifesto">Manifesto</a>
-      <a href="#about">About</a>
     </nav>
   </header>
 
-  <!-- HERO -->
   <section class="hero">
     <p class="hero-eyebrow">Revelations · Eloquence · Paradox</p>
     <h1 class="hero-title">Where thought<br/><em>refuses</em><br/>to be tamed.</h1>
     <p class="hero-sub">Theories, manifestos & the beautiful absurdity of being human.</p>
-    <p class="hero-about" id="about">
+    <p class="hero-about">
       Explorer of human paradoxes. With <strong>BrunoQ</strong>, my cognitive partner, my Alter-Q,
       I delve into reflections, emotions, and absurdities.<br/><br/>
       Welcome to <strong>Réveloquences SaraQ™</strong>
     </p>
   </section>
 
-  <!-- DIVIDER -->
   <div class="divider">
     <div class="divider-line"></div>
     <span class="divider-symbol">✦ Selected Writings ✦</span>
     <div class="divider-line"></div>
   </div>
 
-  <!-- WRITINGS -->
   <section class="section" id="writings">
     <p class="section-label">Latest Dispatches</p>
 
     <div class="articles">
 
-      <!-- FEATURED -->
-      <div class="article-featured article-card">
+      <!-- FEATURED: SARON -->
+      <a class="article-featured article-card" href="articles/saron-hypothesis.html">
         <div class="featured-accent">
-          <span class="featured-accent-text">Featured · Essay</span>
+          <span class="featured-accent-text">Featured · Theory</span>
         </div>
         <div class="featured-content">
-          <p class="card-tag">Manifesto · Vol. I</p>
-          <h2 class="card-title" style="font-size:1.6rem;">On the Paradox of Knowing Too Much and Understanding Too Little</h2>
-          <p class="card-excerpt">We drown in information yet starve for meaning. This is the defining contradiction of our age — and perhaps the most human thing about us.</p>
-          <p class="card-meta">Add your first piece here</p>
+          <p class="card-tag">Consciousness · Quantum · Vol. II</p>
+          <h2 class="card-title" style="font-size:1.6rem;">The Saron Hypothesis</h2>
+          <p class="card-excerpt">What if consciousness was a particle? A tiny cosmic entity floating through the universe, waiting to land on the right receiver to activate. Not flesh. Not human. Just… a compatible structure.</p>
+          <p class="card-meta">2026 · SaraQ</p>
         </div>
-      </div>
+      </a>
 
-      <!-- CARD 2 -->
+      <!-- INTRO -->
+      <a class="article-card" href="articles/quantum-introduction.html">
+        <p class="card-tag">Introduction · Vol. I</p>
+        <h3 class="card-title">A Quantum (and a bit messy) Introduction</h3>
+        <p class="card-excerpt">My brain runs at 3000 km/h. Every thought electric, floating, ready to activate. Welcome to the stylish chaos.</p>
+        <p class="card-meta">2026 · SaraQ</p>
+      </a>
+
+      <!-- PLACEHOLDERS -->
       <div class="article-card">
         <p class="card-tag">Theory</p>
-        <h3 class="card-title">The Architecture of Self-Deception</h3>
-        <p class="card-excerpt">We build elaborate fictions about ourselves, then forget we were the architects.</p>
-        <p class="card-meta">Coming soon</p>
+        <h3 class="card-title" style="color:var(--muted);">Coming Soon</h3>
+        <p class="card-excerpt">The next revelation is forming somewhere between 3am and a quantum glitch.</p>
+        <p class="card-meta card-soon">— · SaraQ</p>
       </div>
 
-      <!-- CARD 3 -->
       <div class="article-card">
         <p class="card-tag">Reflection</p>
-        <h3 class="card-title">Emotions as Data: A Field Guide</h3>
-        <p class="card-excerpt">What if feelings were not weaknesses to overcome, but signals to decode?</p>
-        <p class="card-meta">Coming soon</p>
-      </div>
-
-      <!-- CARD 4 -->
-      <div class="article-card">
-        <p class="card-tag">Absurdity</p>
-        <h3 class="card-title">Why We Perform Authenticity</h3>
-        <p class="card-excerpt">The great irony: the more we try to be real, the more theatrical we become.</p>
-        <p class="card-meta">Coming soon</p>
+        <h3 class="card-title" style="color:var(--muted);">Coming Soon</h3>
+        <p class="card-excerpt">Some thoughts take time to crystallize. This one is still becoming.</p>
+        <p class="card-meta card-soon">— · SaraQ</p>
       </div>
 
     </div>
   </section>
 
-  <!-- MANIFESTO QUOTE -->
   <section class="manifesto" id="manifesto">
     <div class="section-label">The Foundation</div>
     <p class="manifesto-quote">
@@ -509,7 +302,6 @@
     <p class="manifesto-author">— SaraQ, Réveloquences™</p>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <span class="footer-logo">Réveloquences SaraQ™</span>
     <span class="footer-copy">© 2026 · All rights reserved · Powered by thought & BrunoQ</span>
