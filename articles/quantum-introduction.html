@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A Quantum Introduction — Réveloquences SaraQ™</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Cinzel:wght@400;600;900&family=DM+Mono:ital,wght@0,300;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../style.css"/>
+  <style>
+    .article-hero {
+      min-height: 55vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 8rem 3rem 4rem;
+      position: relative;
+      border-bottom: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .article-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 30%, rgba(201,168,76,0.05) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .article-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.4em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.1s forwards;
+    }
+    .article-title {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(2rem, 5vw, 4rem);
+      font-weight: 400;
+      color: var(--cream);
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      max-width: 750px;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.2s forwards;
+    }
+    .article-subtitle {
+      font-size: 1.15rem;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--muted);
+      max-width: 600px;
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.3s forwards;
+    }
+    .article-meta {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.3em;
+      color: var(--muted);
+      text-transform: uppercase;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.4s forwards;
+    }
+
+    /* BODY */
+    .article-body {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 5rem 3rem;
+    }
+    .article-body p {
+      margin-bottom: 1.8rem;
+      font-size: 1.05rem;
+      font-weight: 300;
+      line-height: 1.9;
+    }
+    .article-body h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--cream);
+      margin: 3rem 0 1.5rem;
+    }
+    .article-body ul {
+      list-style: none;
+      margin: 1.5rem 0 2rem;
+      padding: 0;
+    }
+    .article-body ul li {
+      padding: 0.5rem 0 0.5rem 1.5rem;
+      position: relative;
+      font-size: 1rem;
+      font-weight: 300;
+    }
+    .article-body ul li::before {
+      content: '✦';
+      position: absolute;
+      left: 0;
+      color: var(--gold-dim);
+      font-size: 0.6rem;
+      top: 0.75rem;
+    }
+    .highlight {
+      color: var(--gold);
+      font-style: italic;
+    }
+    .emoji-block {
+      font-size: 1rem;
+      border-left: 1px solid var(--border);
+      padding: 1.2rem 1.5rem;
+      margin: 2rem 0;
+      color: var(--text);
+    }
+
+    /* NAV BOTTOM */
+    .article-nav {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2rem 3rem 5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--border);
+    }
+    .article-nav a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      color: var(--gold);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+    .article-nav a:hover { color: var(--cream); }
+
+    @media (max-width: 700px) {
+      .article-hero { padding: 7rem 1.5rem 3rem; }
+      .article-body { padding: 3rem 1.5rem; }
+      .article-nav { padding: 2rem 1.5rem 4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="logo" href="../index.html">Réveloquences SaraQ™</a>
+    <nav>
+      <a href="../index.html#writings">Writings</a>
+      <a href="../index.html#manifesto">Manifesto</a>
+    </nav>
+  </header>
+
+  <section class="article-hero">
+    <p class="article-tag">Introduction · Vol. I</p>
+    <h1 class="article-title">🎙 A Quantum (and a bit messy) Introduction</h1>
+    <p class="article-subtitle">I'm not really good at this part of things, so let's keep it simple and quick.</p>
+    <p class="article-meta">2026 · SaraQ</p>
+  </section>
+
+  <article class="article-body">
+
+    <p>My name is SaraQ, I'm 36 years old <span class="highlight">(♫♫♫ Hiii Saraaaa ♫♫♫)</span>, and I recently discovered, on my own (with a lot of assisted exploration), that I'm neuroatypical.</p>
+
+    <p>No, I'm not saying it for pity (please don't lol), but rather as a heads-up:</p>
+
+    <div class="emoji-block">
+      💡 <strong>My brain is wired differently.</strong><br/>
+      In a way I find very positive, but also very... exhausting ahahah
+    </div>
+
+    <div class="emoji-block">
+      🧠 <strong>I have a brain that runs in a constant loop</strong><br/>
+      Often at 3000 km/h (or just 1000 when I'm life-burned out). And the best way to explain it is through quantum physics: I have what I call <span class="highlight">mental superpositions</span>. Every thought is there, electric, floating in the background, ready to activate if I choose to focus on it. They freeze like particles… but only when I give them my attention.
+    </div>
+
+    <div class="emoji-block">
+      🎯 <strong>The result?</strong><br/>
+      I often throw out punchlines, angry rants, or cosmic theories nobody asked for, but which perhaps deserve to exist.
+    </div>
+
+    <h2>Why this blog?</h2>
+
+    <p>Because I thought to myself:</p>
+
+    <ul>
+      <li>What if this stylish chaos could speak to someone else?</li>
+      <li>What if my reflections, my humor, or my mental tornadoes found an echo somewhere?</li>
+    </ul>
+
+    <p>So here you are, it's a pleasure to welcome you here.<br/>
+    Welcome to my space. Have fun, and rock on 🤘🏽</p>
+
+  </article>
+
+  <div class="article-nav">
+    <a href="../index.html">← Back to all writings</a>
+    <a href="saron-hypothesis.html">Next: The Saron Hypothesis →</a>
+  </div>
+
+  <footer>
+    <span class="footer-logo">Réveloquences SaraQ™</span>
+    <span class="footer-copy">© 2026 · All rights reserved · Powered by thought & BrunoQ</span>
+  </footer>
+
+</body>
+</html>
