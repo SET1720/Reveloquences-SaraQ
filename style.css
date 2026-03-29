@@ -3,9 +3,9 @@
   --deep: #0d0d0f;
   --surface: #111114;
   --border: #222228;
-  --gold: #c9a84c;
-  --gold-dim: #8a6d2f;
-  --gold-glow: rgba(201,168,76,0.15);
+  --gold: #7B8FFF;
+  --gold-dim: rgba(123, 143, 255, 0.4);
+  --gold-glow: rgba(123, 143, 255, 0.08);
   --cream: #e8e0d0;
   --muted: #6b6660;
   --text: #cfc8bc;
