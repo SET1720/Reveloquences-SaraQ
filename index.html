@@ -14,7 +14,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      padding: 1rem 3rem 1rem;
+      padding: 8rem 3rem 4rem;
       position: relative;
       overflow: hidden;
     }
@@ -48,10 +48,12 @@
       margin-bottom: 2rem;
       opacity: 0;
       animation: fadeUp 1s 0.2s forwards;
+      margin: 0 auto;        /* ajoute ça */
+      text-align: center;    /* ajoute ça */
     }
     .hero-title {
       font-family: 'Cinzel', serif;
-      font-size: clamp(2.3rem, 7vw, 6.5rem);
+      font-size: clamp(2.1rem, 7vw, 6.5rem);
       font-weight: 400;
       line-height: 1.05;
       color: var(--cream);
@@ -59,6 +61,8 @@
       opacity: 0;
       animation: fadeUp 1s 0.4s forwards;
       max-width: 800px;
+      margin: 0 auto;        /* ajoute ça */
+      text-align: center;    /* ajoute ça */
     }
     .hero-title em { font-style: italic; color: var(--gold); }
     .hero-sub {
@@ -70,6 +74,8 @@
       max-width: 500px;
       opacity: 0;
       animation: fadeUp 1s 0.6s forwards;
+      margin: 0 auto;        /* ajoute ça */
+      text-align: center;    /* ajoute ça */
     }
     .hero-about {
       max-width: 520px;
@@ -234,7 +240,7 @@
 
   <section class="hero">
     <p class="hero-eyebrow">Revelations · Eloquence · Paradox</p>
-    <h1 class="hero-title" style="text-align: center;">Where thought<br/><em>refuses</em><br/>to be tamed.</h1>
+    <h1 class="hero-title">Where thought<br/><em>refuses</em><br/>to be tamed.</h1>
     <p class="hero-sub">Theories, manifestos & the beautiful absurdity of being human.</p>
     <p class="hero-about">
       Explorer of human paradoxes. With <strong>BrunoQ</strong>, my cognitive partner, my Alter-Q,
