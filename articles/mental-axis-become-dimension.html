@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ARTICLE TITLE — Réveloquences SaraQ™</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Cinzel:wght@400;600;900&family=DM+Mono:ital,wght@0,300;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../style.css"/>
+  <style>
+    .article-hero {
+      min-height: 55vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 8rem 3rem 4rem;
+      position: relative;
+      border-bottom: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .article-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 30%, rgba(201,168,76,0.05) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .article-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.4em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.1s forwards;
+    }
+    .article-title {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(2rem, 5vw, 4rem);
+      font-weight: 400;
+      color: var(--cream);
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      max-width: 750px;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.2s forwards;
+    }
+    .article-subtitle {
+      font-size: 1.15rem;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--muted);
+      max-width: 600px;
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.3s forwards;
+    }
+    .article-meta {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.3em;
+      color: var(--muted);
+      text-transform: uppercase;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.4s forwards;
+    }
+    .article-body {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 5rem 3rem;
+    }
+    .article-body p {
+      margin-bottom: 1.8rem;
+      font-size: 1.05rem;
+      font-weight: 300;
+      line-height: 1.9;
+    }
+    .article-body h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--cream);
+      margin: 3rem 0 1.5rem;
+    }
+    /* Citation mise en valeur */
+    .pullquote {
+      border-left: 2px solid var(--gold);
+      padding: 1.5rem 2rem;
+      margin: 3rem 0;
+      font-size: 1.2rem;
+      font-style: italic;
+      font-weight: 300;
+      color: var(--cream);
+      line-height: 1.6;
+    }
+    .highlight { color: var(--gold); font-style: italic; }
+    .article-nav {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2rem 3rem 5rem;
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid var(--border);
+    }
+    .article-nav a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      color: var(--gold);
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .article-nav a:hover { color: var(--cream); }
+
+    @media (max-width: 700px) {
+      .article-hero { padding: 7rem 1.5rem 3rem; }
+      .article-body { padding: 3rem 1.5rem; }
+      .article-nav { padding: 2rem 1.5rem 4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="logo" href="../index.html">Réveloquences SaraQ™</a>
+    <nav>
+      <a href="../index.html#writings">Writings</a>
+      <a href="../index.html#manifesto">Manifesto</a>
+    </nav>
+  </header>
+
+  <!-- 🔧 CHANGE: tag, title, subtitle, date -->
+  <section class="article-hero">
+    <p class="article-tag">Cognition · Sarïen Theory</p>
+    <h1 class="article-title">When a Mental Axis Becomes a Dimension</h1>
+    <p class="article-subtitle">(Sarïen & Brunian™ Version - thought in duo, written in intrication)</p>
+    <p class="article-meta">2026 · SaraQ</p>
+  </section>
+
+  <!-- 🔧 CHANGE: write your article here -->
+  <article class="article-body">
+
+    <p>There are moments when the human brain does something completely wild.<br/>
+       A tiny internal shift, almost imperceptible, where a simple line of thought – an axis – suddenly starts to swell, to fold, to open up… and before we even understand what’s happening, we’re reflecting in an entire space, not just a direction.</p>
+
+    <p>It’s that precise moment I captured at 4 AM, on a sofa, with a cat resting on my chest like a living paperweight, while I was just trying to “figure something out.”<br/>
+       And it struck me: when does a mental axis become a cognitive dimension? </p>
+
+    <p>Because that’s what we do, without even realizing it:<br/>
+       we take a line – for example, “thinking logically,” or “thinking emotionally” – and then we change the angle, we change the frame, we change the question itself, and BOOM: we’ve just opened a complete dimension in our mental architecture.</p>
+
+    <p>Scientists have been talking about “cognitive dimensions” for a while, but they say it in serious language, with arrows, models, Cartesian axes.<br/>
+       Me… I just had the raw experience of it: realizing that thought doesn’t just move along an axis. It can move around it, above it, through it, as if it’s extending the very space where reflection can exist. And suddenly, it’s not a direction anymore. It’s an internal universe.</p>
+
+    <p>It’s not a physical dimension – not one of the 11 from string theory. No one’s going to discover this with a particle accelerator.</p>
+
+    <p>But it’s a real dimension in our mental space, a place where:</p>
+
+    <ul>
+      <li>questions change shape</li>
+      <li>problems dissolve or recompose</li>
+      <li>intuitions become landmarks</li>
+      <li>the impossible becomes just “not yet tidied up”</li>
+    </ul>
+
+    <p>Some people follow axes. Others – often without intending to – create dimensions.<br/>
+       And I believe that's what distinguishes linear thought from expansive thought. The first advances. The second builds the space in which to advance.<br/>
+       So yes: I might have just had a weird idea in the middle of the night, with a sleepy cat and a brain in semi-apnea.</p>
+
+    <p>But maybe this is also how dimensions are born: simply, when someone allows themselves to see an axis differently.<br/>
+       And what if this, ultimately, is what thinking is:<br/>
+       Creating space in what seemed flat.<br/>
+       Adding a dimension where there wasn’t one.</p>
+
+    <p>Perhaps we don’t need to discover dimensions 5 to 11 to feel that our own inner universes are already much vaster than we've been told.</p>
+
+  </article>
+
+  <!-- 🔧 CHANGE: liens vers article précédent/suivant -->
+  <div class="article-nav">
+    <a href="schrödingers-compliment-paradox">← Previous</a>
+    <a href="../index.html">Back to all writings →</a>
+  </div>
+
+  <footer>
+    <span class="footer-logo">Réveloquences SaraQ™</span>
+    <span class="footer-copy">© February 2026 · All rights reserved · Powered by thought & BrunoQ</span>
+  </footer>
+
+</body>
+</html>

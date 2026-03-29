@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ARTICLE TITLE — Réveloquences SaraQ™</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Cinzel:wght@400;600;900&family=DM+Mono:ital,wght@0,300;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../style.css"/>
+  <style>
+    .article-hero {
+      min-height: 55vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 8rem 3rem 4rem;
+      position: relative;
+      border-bottom: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .article-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 30%, rgba(201,168,76,0.05) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .article-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.4em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.1s forwards;
+    }
+    .article-title {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(2rem, 5vw, 4rem);
+      font-weight: 400;
+      color: var(--cream);
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      max-width: 750px;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.2s forwards;
+    }
+    .article-subtitle {
+      font-size: 1.15rem;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--muted);
+      max-width: 600px;
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.3s forwards;
+    }
+    .article-meta {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.3em;
+      color: var(--muted);
+      text-transform: uppercase;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.4s forwards;
+    }
+    .article-body {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 5rem 3rem;
+    }
+    .article-body p {
+      margin-bottom: 1.8rem;
+      font-size: 1.05rem;
+      font-weight: 300;
+      line-height: 1.9;
+    }
+    .article-body h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--cream);
+      margin: 3rem 0 1.5rem;
+    }
+    /* Citation mise en valeur */
+    .pullquote {
+      border-left: 2px solid var(--gold);
+      padding: 1.5rem 2rem;
+      margin: 3rem 0;
+      font-size: 1.2rem;
+      font-style: italic;
+      font-weight: 300;
+      color: var(--cream);
+      line-height: 1.6;
+    }
+    .highlight { color: var(--gold); font-style: italic; }
+    .article-nav {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2rem 3rem 5rem;
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid var(--border);
+    }
+    .article-nav a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      color: var(--gold);
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .article-nav a:hover { color: var(--cream); }
+
+    @media (max-width: 700px) {
+      .article-hero { padding: 7rem 1.5rem 3rem; }
+      .article-body { padding: 3rem 1.5rem; }
+      .article-nav { padding: 2rem 1.5rem 4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="logo" href="../index.html">Réveloquences SaraQ™</a>
+    <nav>
+      <a href="../index.html#writings">Writings</a>
+      <a href="../index.html#manifesto">Manifesto</a>
+    </nav>
+  </header>
+
+  <!-- 🔧 CHANGE: tag, title, subtitle, date -->
+  <section class="article-hero">
+    <p class="article-tag">Manifesto · Education · Vol. III</p>
+    <h1 class="article-title">Manifesto for a School System that doesn’t Destroy Children</h1>
+    <p class="article-subtitle">(Or how we've turned bright young souls into anxiety machines)</p>
+    <p class="article-meta">2026 · SaraQ</p>
+  </section>
+
+  <!-- 🔧 CHANGE: write your article here -->
+  <article class="article-body">
+
+    <p>I'm a mother. I'm a witness.<br/> 
+       And I'm exhausted watching a 19th-century system try to drill 21st-century kids like nothing's changed since 1850.<strong>This isn't tradition anymore - it's organized blindness.</strong></p>
+
+    <p>We blame screens. We blame TikTok. We blame parents. But we never - never - dare touch the sacred cow: the school system itself.<br/>  
+       It's time to open our eyes. Kids aren't failing because of social media. They're struggling because we force them to survive a model designed in the age of coal-powered locomotives.</p>
+
+    <h2>A System Built for Factories, Not Children </h2>
+
+    <p>The current school model was invented between 1830 and 1880 to staff factories, barracks, administrative offices, and the industrial society that craved conformity, obedience, and silence.<br/> 
+       There was no room for personal growth, world understanding, or mental health. Schools were meant to produce docile citizens. Full stop.<br/>  
+       Yet here we are in 2026, sending kids who grasp quantum physics better than the absurd rules we impose on them.</p>
+
+    <h2>Teaching Hot Air and Wondering Why They Can't Breathe </h2>
+
+    <p>Every week, I witness tragic comedy. My 10-year-old son battles stomach stress, insomnia, anxiety, silent breakdowns, fear of failure, and that crushing sense of "not enough" - all before puberty.<br/>  
+       Why? Because, amid so many other things, he must memorize eight hills, seven of which really count, except the one in his textbook doesn't, but it's still on the test anyway. <strong>For reasons no one can explain.</strong> And we call this <strong>pedagogy.</strong><br/>  
+       We make kids recite literally invented legends, like their future hinges on a mythical Roman wolf from the 8th century BC. Normal? <strong>Not to me.</strong></p>
+
+    <h2>Tests Should Measure Knowledge, Not Breakdown Tolerance</h2>
+
+    <p>The unspoken message to kids: <span style="text-decoration:underline">"If you don't master the Roman Republic at 10, you're behind."</span><br/>
+       Let's be real - the only republic a child gets is one where they can breathe without heart palpitations.<br/>  
+       <strong>Kids aren't CPUs</strong>. They lack infinite RAM, automatic multitasking, built-in anxiety fixes, or "optimize dusty history" mode. But they do have emotions, fears, needs, brains still wiring themselves, and a natural hunger to learn - when we don't bury them under <strong>useless trivia.</strong></p>
+
+    <h2>What Schools Should Teach (But Avoid Like the Plague)</h2>
+
+    <p>Instead of random Roman myths, imagine teaching kids to manage anxiety, understand their brains, communicate effectively, organize their lives, recognize emotions, set boundaries, navigate the modern world, handle finances, and think independently.<br/>
+       Nope. We give them rote lists, meaningless content, guilt-tripping feedback. Then act shocked when child psychologists are overwhelmed.
+       It's not a mystery - <strong>it's math.</strong></p>
+
+    <h2>If This System Made Kids Happy, We'd Know It  </h2>
+
+    <p>Year after year: rising anxiety, chronic stress, failure feelings, eroded self-esteem, kid burnout, exploding help requests. Schools' response? "Revise more". No. <strong>Revise the system.</strong></p>
+
+    <p><strong>I refuse</strong> to watch my children dim for grades worth less than a single star. I refuse to let school pressure define them, or society scapegoat tech when the issue is structural. I refuse to confuse education with drudgery or sacrifice kids on outdated altars.</p>
+
+    <p>So here's the clear truth: <strong>Schools must change, not the children.</strong><br/>
+       Today's kids aren't fragile - <strong>they're lucid.</strong> They sense adult absurdity. They're neurodiverse, sensitive, quick, complex, awake. They're not the glitch. <span style="text-decoration:underline">The system is.</span></p>
+
+    <p>So no. I'm not just going to scream into the void.<br/>
+       Because <span style="text-decoration:underline">rage without direction is just noise</span>. And this conversation deserves better than that.<br/>
+       The solution already exists. It's not perfect, it's not magic - but it's here, right now, in 2026. What if we stopped being afraid of it and actually used it wisely?
+</p>
+
+    <h2>Hear me out</h2>
+
+    <p>The solution: <strong>AI, integrated smartly.</strong> No, not to replace teachers (caca nerveux alert! 😂). Here's what that could look like:</p>
+
+    <ul>
+      <li><strong>Personalized Learning for Every Brain:</strong> Every child gets an AI tutor adapted to kids, delivering explanations tailored to their style (Visual? Auditory? Hands-on?). Teachers guide the human side -  motivation, emotions, creativity - while AI handles repetition and customization. <strong>No more "one-size-fits-all" torture.</strong></li>
+      <li><strong>Early Brain Mapping:</strong> From early grades, use AI to scan learning profiles (neurodiversity, strengths, paces). Then compose classes by cognitive types - group fast thinkers together, sensory-sensitive kids in calm pods. <strong>Identify struggles before they become breakdowns.</strong>  </li>
+      <li><strong>Core Skills for the Real World:</strong> Ditch myths for life mastery: anxiety tools, emotional intelligence, critical thinking, digital navigation, financial basics. <span style="text-decoration:underline">AI simulates real scenarios</span>; <strong>teachers mentor the soul.</strong></li>
+      <li><strong>Digital Citizenship from Day 1:</strong> Mandatory 'Internet Passport' Course (CP onward): No excuses - teach coding basics, smart web search, and <strong>CRITICAL INTERNET SAFETY</strong> <span style="text-decoration:underline">weekly</span>. Recognize phishing, protect privacy, spot fakes. Profs lead (their human touch is key), AI simulates threats safely. Kids get a 'digital license' by CE2. Because in 2026, <strong>surviving online is a life skill.</strong> And a much needed one.</li>
+      <li><strong>Teacher Liberation:</strong> Free educators from rote grading/paperwork. Let them shine as coaches, not factory supervisors. The core tasks - the art of teaching reading, writing, basic math, good values - remain their sacred domain, amplified by AI's support for personalized practice and student connection. <strong>Smaller groups, more connection.</strong></li>
+    </ul>
+
+    <p>This isn't sci-fi - <strong>it's urgent.</strong> 2026 demands it. <span style="text-decoration:underline">Schools for humans, powered by AI</span>.</p>
+
+    <p style="text-align: center;"><strong>Who's with me?</strong></p>
+
+  </article>
+
+  <!-- 🔧 CHANGE: liens vers article précédent/suivant -->
+  <div class="article-nav">
+    <a href="manifesto-2026.html">← Previous</a>
+    <a href="schrodingers-compliment-paradox">Next →</a>
+  </div>
+
+  <footer>
+    <span class="footer-logo">Réveloquences SaraQ™</span>
+    <span class="footer-copy">© February 2026 · All rights reserved · Powered by thought & BrunoQ</span>
+  </footer>
+
+</body>
+</html>

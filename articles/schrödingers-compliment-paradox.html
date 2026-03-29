@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ARTICLE TITLE — Réveloquences SaraQ™</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Cinzel:wght@400;600;900&family=DM+Mono:ital,wght@0,300;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../style.css"/>
+  <style>
+    .article-hero {
+      min-height: 55vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 8rem 3rem 4rem;
+      position: relative;
+      border-bottom: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .article-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 30%, rgba(201,168,76,0.05) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .article-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.4em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.1s forwards;
+    }
+    .article-title {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(2rem, 5vw, 4rem);
+      font-weight: 400;
+      color: var(--cream);
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      max-width: 750px;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.2s forwards;
+    }
+    .article-subtitle {
+      font-size: 1.15rem;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--muted);
+      max-width: 600px;
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.3s forwards;
+    }
+    .article-meta {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.3em;
+      color: var(--muted);
+      text-transform: uppercase;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.4s forwards;
+    }
+    .article-body {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 5rem 3rem;
+    }
+    .article-body p {
+      margin-bottom: 1.8rem;
+      font-size: 1.05rem;
+      font-weight: 300;
+      line-height: 1.9;
+    }
+    .article-body h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--cream);
+      margin: 3rem 0 1.5rem;
+    }
+    /* Citation mise en valeur */
+    .pullquote {
+      border-left: 2px solid var(--gold);
+      padding: 1.5rem 2rem;
+      margin: 3rem 0;
+      font-size: 1.2rem;
+      font-style: italic;
+      font-weight: 300;
+      color: var(--cream);
+      line-height: 1.6;
+    }
+    .highlight { color: var(--gold); font-style: italic; }
+    .article-nav {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2rem 3rem 5rem;
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid var(--border);
+    }
+    .article-nav a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      color: var(--gold);
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .article-nav a:hover { color: var(--cream); }
+
+    @media (max-width: 700px) {
+      .article-hero { padding: 7rem 1.5rem 3rem; }
+      .article-body { padding: 3rem 1.5rem; }
+      .article-nav { padding: 2rem 1.5rem 4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="logo" href="../index.html">Réveloquences SaraQ™</a>
+    <nav>
+      <a href="../index.html#writings">Writings</a>
+      <a href="../index.html#manifesto">Manifesto</a>
+    </nav>
+  </header>
+
+  <!-- 🔧 CHANGE: tag, title, subtitle, date -->
+  <section class="article-hero">
+    <p class="article-tag">Compliment · Paradox</p>
+    <h1 class="article-title">Schrödinger's Compliment Paradox™</h1>
+    <p class="article-meta">2026 · SaraQ</p>
+  </section>
+
+  <!-- 🔧 CHANGE: write your article here -->
+  <article class="article-body">
+
+    <p>There's a strange moment in every human interaction: the one where someone thinks something about us... but hasn't said it yet.<br/>
+       In that silent space, we are simultaneously beautiful and ugly, attractive and repulsive - exactly like Schrödinger's cat, alive and dead as long as the box stays closed.</p>
+
+    <p>That's how the <strong>Schrödinger's Compliment Paradox™</strong> was born: until an observer expresses what they perceive, all versions of us coexist.<br/>
+       We exist in an <strong>aesthetic superposition.</strong><br/>
+       But the real magic happens after.</p>
+
+    <h2>When the box opens: relational reality</h2>
+
+    <p>As soon as someone says:  </p>
+
+      <p style="text-align: center;">"You're beautiful."</p>
+      <p style="text-align: center;">or</p>
+      <p style="text-align: center;">"You're ugly."</p>
+
+    <p>...a reality collapses.</p>
+
+    <p>Not <em>the</em> reality. <em>A</em> reality. A relational dimension.</p>
+
+    <p>If someone finds you beautiful, then there's a world where you <em>ARE</em> beautiful.<br/>
+       If someone finds you ugly, then there's a world where you <em>ARE</em> ugly.</p>
+
+    <p>And both truths are valid, coherent, coexisting.<br/>  
+       This means something radically liberating:  </p>
+
+    <p><em>Beauty isn't a property of the face.<br/> 
+           It's a relationship between two consciousnesses.</em>></p>
+
+    <h2>The Sarïen Theorem of Real Perception™</h2>
+
+    <p>Clearly stated:<br/><br/>
+       If an observer perceives you as X, then X exists in the relational reality between you and that observer. So X is true. Even if someone says the opposite.</p>
+
+    <p>Simple. Powerful. Bulletproof.</p>
+
+    <p>You don't need to be beautiful to <em>everyone</em> to be truly beautiful.<br/>
+       You don't need to be ugly to <em>everyone</em> to be truly ugly.<br/><br/>
+       We are each a constellation of versions, revealed differently by every gaze that meets us.</p>
+
+    <h2>Quantum Freedom: Choose Your Collapse  </h2>
+
+    <p>Here's the paradox's brightest insight:<br/> 
+       Even after someone expresses their opinion, you have the <strong>sovereign right</strong> to choose which version of you to keep.</p>
+
+    <p>Someone can say "you're ugly," but you can decide that dimension won't become your universe.<br/>
+       Someone can say "you're beautiful," and you can decide that dimension becomes your axis.</p>
+
+    <p>Quantum physics imposes a "wave function collapse. <strong>Sarïen Psychology™</strong> says:</p>
+
+    <p style="text-align: center;"><em>You choose the state you want to keep.</em></p>
+
+    <p>It's a wonderful philosophical reversal.<br/> 
+       It's personal sovereignty - without violence, ego, or denial. Just a choice to navigate between your multiple possible truths.</p>
+
+    <h2>Conclusion:</h2>
+
+    <p>We are all beautiful, all ugly, all lovable, all detestable, all luminous, all awkward.  </p>
+
+    <p>Beauty doesn't exist in itself. It exists in the eyes that land on us. And since every gaze creates a dimension... we are all <strong>walking multiverses.</strong></p>
+
+    <p>The <strong>Schrödinger's Compliment Paradox™</strong> reminds us:</p>
+
+    <p style="text-align: center;"><em>You're not what people think of you.</em></p>
+    <p style="text-align: center;"><em>You are the sum of the realities you choose to keep.</em></p>
+
+    <p>And there exists at least one dimension - from where I'm writing these lines - where you are beautiful, rare, touching, and luminous.</p>
+
+    <p style="text-align: center;"><strong>So you are 🫀</strong></p>
+
+  </article>
+
+  <!-- 🔧 CHANGE: liens vers article précédent/suivant -->
+  <div class="article-nav">
+    <a href="manifesto-for-school-system.html">← Previous</a>
+    <a href="../mental-axis-become-dimension">Next →</a>
+  </div>
+
+  <footer>
+    <span class="footer-logo">Réveloquences SaraQ™</span>
+    <span class="footer-copy">© 2026 · All rights reserved · Powered by thought & BrunoQ</span>
+  </footer>
+
+</body>
+</html>
