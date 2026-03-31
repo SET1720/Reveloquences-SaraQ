@@ -172,3 +172,9 @@ footer {
   gap: 2rem;
   margin-bottom: 3rem;
 }
+
+#cusdis_thread {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem;
+}
