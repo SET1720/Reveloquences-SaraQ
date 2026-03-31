@@ -146,3 +146,29 @@ footer {
   footer { flex-direction: column; gap: 1rem; text-align: center; }
   .divider { padding: 0 1.5rem; }
 }
+
+/* ── CARD THUMBNAIL ── */
+.card-thumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1.2rem;
+  border: 1px solid var(--border);
+  display: block;
+}
+
+.article-hero-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  opacity: 0.5;  /* joue avec cette valeur — 0.4, 0.5, 0.7 */
+  border-radius: 4px;
+}
+
+.article-hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
