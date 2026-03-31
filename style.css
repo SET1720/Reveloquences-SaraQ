@@ -17,7 +17,7 @@ html { scroll-behavior: smooth; }
 body {
   background: var(--black);
   color: var(--text);
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Ubuntu Condensed', Georgia, serif;
   font-size: 18px;
   line-height: 1.7;
   overflow-x: hidden;
