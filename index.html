@@ -93,13 +93,13 @@
     /* ── ARTICLES ── */
     .section { padding: 5rem 3rem; }
 
-    .articles {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 1px;
-      background: var(--border);
-      border: 1px solid var(--border);
-    }
+   .articles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
 
     .article-card {
       background: var(--deep);
@@ -156,13 +156,12 @@
     }
     .card-soon { color: var(--border); }
 
-    /* Featured */
-    .article-featured {
-      grid-column: 1 / -1;
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      background: var(--deep);
-    }
+   /* Featured */
+.article-featured {
+  grid-column: span 1;
+  display: block;
+  background: var(--deep);
+}
     .featured-accent {
       background: linear-gradient(180deg, var(--gold-glow) 0%, transparent 100%);
       border-right: 1px solid var(--border);
@@ -347,7 +346,6 @@
   </section>
 
   <footer>
-    <span class="footer-logo">Réveloquences SaraQ™</span>
     <span class="footer-copy">© 2026 · All rights reserved · Powered by thought & BrunoQ</span>
   </footer>
 
