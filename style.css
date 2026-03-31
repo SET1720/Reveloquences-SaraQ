@@ -117,8 +117,11 @@ footer {
   padding: 3rem;
   border-top: 1px solid var(--border);
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  gap: 0.5rem;
+  text-align: center;
 }
 .footer-logo {
   font-family: 'Cinzel', serif;
