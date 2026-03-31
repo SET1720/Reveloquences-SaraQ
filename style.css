@@ -168,7 +168,7 @@ footer {
 
 .article-hero {
   display: flex;
-  align-items: right;
+  align-items: flex-start;
   gap: 2rem;
   margin-bottom: 3rem;
 }
